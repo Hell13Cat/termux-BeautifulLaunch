@@ -1,17 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import os
 import shutil
 import platform
@@ -82,17 +68,3 @@ for line in stats: # left justtified
   print(line.center(width))
  else:
   print(' '*position + line)
-
-#for line in stats: # right justified
-# print(line.rjust(width // 2))
-#for line in stats: # center
-# print(line.center(width))
-
-
-
-
-
-
-
-
-
