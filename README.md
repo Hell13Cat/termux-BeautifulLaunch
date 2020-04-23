@@ -16,11 +16,11 @@
 * [Требования](#Requirements)
 * [Скачать](https://github.com/Hell13Cat/termux-BeautifulLaunch/releases)
 
-![Скриншот](/путь/к/изображению.jpg)
+![Скриншот](https://i.imgur.com/6EMU7do.png)
 
-## <a name="Requirements"></a>
+## <a name="Requirements"></a> Требования
 
 * Python 3.7 и выше
 
-## <a name="Install"></a>
+## <a name="Install"></a> Как установить?
 
