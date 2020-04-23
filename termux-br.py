@@ -33,8 +33,9 @@ except ImportError:
  import ConfigParser as configparser
 config = configparser.ConfigParser()
 config.read(os.getcwd() + "/termux-br.cfg")
-phoneroot = config.get("Setting", "phone")
-flashroot = config.get("Setting", "flash")
+phoneroot = config.get("Root", "phone")
+flashroot = config.get("Root", "flash")
+flashok = config.get("Setting", "flash")
 
 
 os.system("clear")
@@ -66,11 +67,12 @@ total, used, free = shutil.disk_usage(phoneroot)
 stats.append("> " + str(total // (2**20)) + " mb - Total")
 stats.append("> " + str(used // (2**20)) + " mb - Used")
 stats.append("> " + str(free // (2**20)) + " mb - Free")
-stats.append("+++ Flash memory statistics +++")
-total, used, free = shutil.disk_usage(flashroot)
-stats.append("> " + str(total // (2**20)) + " mb - Total")
-stats.append("> " + str(used // (2**20)) + " mb - Used")
-stats.append("> " + str(free // (2**20)) + " mb - Free")
+if flashok == "yes":
+ stats.append("+++ Flash memory statistics +++")
+ total, used, free = shutil.disk_usage(flashroot)
+ stats.append("> " + str(total // (2**20)) + " mb - Total")
+ stats.append("> " + str(used // (2**20)) + " mb - Used")
+ stats.append("> " + str(free // (2**20)) + " mb - Free")
 stats.append("+++       Enjoy using       +++")
 
 width = shutil.get_terminal_size().columns 
