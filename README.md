@@ -26,15 +26,15 @@
 
 * Установить Python 3
 
-    pkg install python
+	pkg install python
 
 * Скачать файлы "termux-br.sh", "termux-br.py", "termux-br.cfg" и поместить в одну папку
 
 * Выполнить две команды
 
-    echo "cd [ПОЛНЫЙ ПУТЬ ДО ПАПКИ С ФАЙЛАМИ]" >> "/data/data/com.termux/files/usr/etc/bash.bashrc"
+	echo "cd [ПОЛНЫЙ ПУТЬ ДО ПАПКИ С ФАЙЛАМИ]" >> "/data/data/com.termux/files/usr/etc/bash.bashrc"
 
-    echo "bash termux-br.sh" >> "/data/data/com.termux/files/usr/etc/bash.bashrc"
+	echo "bash termux-br.sh" >> "/data/data/com.termux/files/usr/etc/bash.bashrc"
 
 * Отредактировать файл "termux-br.cfg" заменив
 
